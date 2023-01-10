@@ -13,4 +13,11 @@
 -- | 2020 | Washington Nationals              |
 -- +------+-----------------------------------+
 
+-- Table
+SELECT year, name
+FROM teams;
 
+-- Count of rows
+SELECT count(*) FROM(
+SELECT year, name
+FROM teams);

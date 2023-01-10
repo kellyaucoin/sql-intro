@@ -13,5 +13,13 @@
 -- | 1906 | Chicago Cubs                      | 116  |
 -- | 2001 | Seattle Mariners                  | 116  |
 -- +------+-----------------------------------+------+
+-- Table
+SELECT year, name, wins
+FROM teams
+ORDER BY wins;
 
-
+-- Count of rows
+SELECT count(*) FROM(
+SELECT year, name, wins
+FROM teams
+ORDER BY wins);
